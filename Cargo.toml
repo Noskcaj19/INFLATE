@@ -1,0 +1,13 @@
+[package]
+name = "zip-inflate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "3.1.18", features = ["derive"] }
+
+[dependencies.zip]
+path = "zip"
+version = "0.6.2"
+default-features = false
+features = ["deflate"]
